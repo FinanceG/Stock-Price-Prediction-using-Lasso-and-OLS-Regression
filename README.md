@@ -1,4 +1,4 @@
-# Daily-Trading-Strategy
+# Lasso and OLS Regression for Investment Strategy Modeling
 Project Overview
 The goal of this project is to build a strategy that analyzes daily financial data, predicts market trends, and provides recommendations for potential trades. Using Python, this project integrates data retrieval, cleaning, visualization, and strategy implementation to simulate real-world trading scenarios.
 
