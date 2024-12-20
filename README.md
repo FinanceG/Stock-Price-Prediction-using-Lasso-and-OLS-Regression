@@ -1,45 +1,114 @@
-# Lasso and OLS Regression for Investment Strategy Modeling
+Stock Price Prediction using Lasso and OLS Regression
+
 Project Overview
-The goal of this project is to build a strategy that analyzes daily financial data, predicts market trends, and provides recommendations for potential trades. Using Python, this project integrates data retrieval, cleaning, visualization, and strategy implementation to simulate real-world trading scenarios.
 
-Key Features
-Data Collection: Uses financial APIs to pull real-time and historical market data for analysis.
-Data Cleaning: Implements data preprocessing techniques to ensure clean, accurate data for modeling.
-Visualization: Utilizes libraries like Matplotlib and Seaborn for visualizing market trends, correlations, and strategy performance.
-Trading Strategy Implementation: Developed algorithms based on financial models to generate trade signals.
-Risk Analysis & Performance Metrics: Evaluates strategy performance through risk-adjusted returns and other financial metrics.
-Getting Started
-Prerequisites
-To run this project, you will need Python 3.x and the following libraries:
+This project analyzes Tesla's historical stock data and builds predictive models using Lasso Regression and Ordinary Least Squares (OLS). The primary objective is to forecast stock prices and evaluate the effectiveness of different regression techniques in financial data analysis.
 
-pandas
-numpy
-matplotlib
-seaborn
-yfinance (or any other financial data API)
-scikit-learn (optional, if machine learning models are used)
-Installation
+Objectives
+
+Retrieve and process historical stock price data for Tesla (TSLA).
+
+Implement and compare two regression models:
+
+Ordinary Least Squares (OLS)
+
+Lasso Regression
+
+Evaluate model performance and derive insights into stock price behavior.
+
+Data Source
+
+Yahoo Finance: The stock data was collected using the yfinance library for the date range November 1, 2022, to November 30, 2024.
+
+Features include:
+
+Open, Close, High, Low prices
+
+Adjusted Close
+
+Trading Volume
+
+Project Workflow
+
+1. Data Collection
+
+Downloaded Tesla’s historical stock prices using yfinance.
+
+2. Data Preprocessing
+
+Handled missing values with imputers.
+
+Standardized features using StandardScaler for consistent scaling.
+
+3. Model Implementation
+
+OLS Regression:
+
+Established a baseline model to analyze relationships between predictors and the target variable.
+
+Lasso Regression:
+
+Applied regularization to reduce overfitting and identify important predictors by penalizing insignificant coefficients.
+
+4. Model Evaluation
+
+Compared OLS and Lasso models using the R² metric.
+
+Identified the strengths and limitations of each approach in predicting stock prices.
+
+Tools and Libraries
+
+Python Libraries:
+
+pandas and numpy: Data manipulation and numerical computations.
+
+yfinance: Data retrieval from Yahoo Finance.
+
+scikit-learn: Machine learning pipeline, regression models, and evaluation metrics.
+
+Techniques:
+
+Feature scaling
+
+Regularization via Lasso
+
+Results and Insights
+
+OLS Regression: Provided a straightforward baseline for prediction but lacked robustness in handling irrelevant features.
+
+Lasso Regression: Enhanced prediction accuracy by penalizing less significant predictors, making it suitable for high-dimensional data.
+
+Insights:
+
+Demonstrated the impact of regularization on model performance.
+
+Highlighted the value of regression analysis in stock price forecasting.
+
+Conclusion
+
+This project showcases the application of machine learning techniques in financial data analysis. By leveraging historical data, it emphasizes the utility of regression models in uncovering patterns and predicting stock behavior. The insights derived can inform investment strategies and decision-making.
+
+How to Use This Project
+
 Clone the repository to your local machine:
 
-bash
-Copy code
-git clone https://github.com/FinanceG/Daily-Trading-Strategy.git
-cd Daily-Trading-Strategy
-Install the required libraries using pip:
+git clone <(https://github.com/FinanceG/Lasso-and-OLS-Regression-for-Investment-Strategy-Modeling/blob/main/FM%20by%20Python.ipynb)>
 
-bash
-Copy code
+Install the required dependencies:
+
 pip install -r requirements.txt
-Usage
-Open the Jupyter notebook file FM by Python.ipynb.
-Follow the steps in the notebook to analyze financial data, implement strategies, and evaluate performance.
-Project Structure
-FM by Python.ipynb: The main Jupyter notebook containing the code for the daily trading strategy.
-requirements.txt: A list of Python dependencies required to run the project.
-data/: (Optional) Folder containing any sample data files used in the analysis.
-results/: (Optional) Folder to save any output files, reports, or visualizations generated from the project.
-Contributions
-Feel free to fork this project, make contributions, or submit pull requests. If you have any suggestions, improvements, or feedback, don’t hesitate to open an issue.
 
-License
-This project is open-source and available under the MIT License.
+Run the Jupyter Notebook to replicate the analysis and visualize results.
+
+Future Scope
+
+Expand the analysis to include other stocks or indices.
+
+Implement advanced models such as Ridge Regression or Neural Networks.
+
+Explore time series forecasting techniques for improved predictions.
+
+Acknowledgments
+
+Special thanks to Yahoo Finance for providing the data and to the open-source Python community for tools and libraries used in this project.
+
