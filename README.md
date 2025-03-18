@@ -94,20 +94,6 @@ Clone the repository to your local machine:
 
 git clone <(https://github.com/FinanceG/Lasso-and-OLS-Regression-for-Investment-Strategy-Modeling/blob/main/FM%20by%20Python.ipynb)>
 
-Install the required dependencies:
-
-pip install -r requirements.txt
-
-Run the Jupyter Notebook to replicate the analysis and visualize results.
-
-Future Scope
-
-Expand the analysis to include other stocks or indices.
-
-Implement advanced models such as Ridge Regression or Neural Networks.
-
-Explore time series forecasting techniques for improved predictions.
-
 Acknowledgments
 
 Special thanks to Yahoo Finance for providing the data and to the open-source Python community for tools and libraries used in this project.
